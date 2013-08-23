@@ -28,9 +28,9 @@
 
     <string-array name="pref_video_quality_entryvalues" translatable="false">
         <!-- The integer value of CamcorderProfile.QUALITY_1080P -->
-        <item>6</item>
-        <!-- The integer value of CamcorderProfile.QUALITY_720P -->
         <item>@string/pref_video_quality_default</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_720P -->
+        <item>5</item>
         <!-- The integer value of CamcorderProfile.QUALITY_480P -->
         <item>4</item>
         <!-- The integer value of CamcorderProfile.QUALITY_HIGH -->
