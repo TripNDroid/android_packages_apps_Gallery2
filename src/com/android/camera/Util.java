@@ -146,6 +146,9 @@ public class Util {
     // Workaround for QC cameras with broken face detection on front camera
     private static boolean sNoFaceDetectOnFrontCamera;
 
+    // Workaround for cameras with broken face detection on rear camera
+    private static boolean sNoFaceDetectOnRearCamera;
+
     // Use samsung HDR format
     private static boolean sSamsungHDRFormat;
 
@@ -180,6 +183,8 @@ public class Util {
         sEnableZSL = context.getResources().getBoolean(R.bool.enableZSL);
         sNoFaceDetectOnFrontCamera = context.getResources().getBoolean(
                 R.bool.noFaceDetectOnFrontCamera);
+        sNoFaceDetectOnRearCamera = context.getResources().getBoolean(
+		R.bool.noFaceDetectOnRearCamera);
 
         sSamsungHDRFormat = context.getResources().getBoolean(R.bool.needsSamsungHDRFormat);
 
@@ -224,6 +229,10 @@ public class Util {
 
     public static boolean useSamsungCamMode() {
         return sSamsungCamMode;
+    }
+
+    public static boolean noFaceDetectOnRearCamera() {
+        return sNoFaceDetectOnRearCamera;
     }
 
     public static boolean noFocusModeChangeForTouch() {

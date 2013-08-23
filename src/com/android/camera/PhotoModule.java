@@ -735,6 +735,10 @@ public class PhotoModule
             return;
         }
 
+        if (Util.noFaceDetectOnRearCamera()) {
+            return;
+        }
+
         if (mFaceDetectionStarted || mCameraState != IDLE) return;
         if (mParameters.getMaxNumDetectedFaces() > 0) {
             mFaceDetectionStarted = true;
