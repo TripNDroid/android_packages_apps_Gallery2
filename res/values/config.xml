@@ -40,7 +40,7 @@
     <!-- Decode YV16 format on Samsung HDR hardware -->
     <bool name="needsSamsungHDRFormat">false</bool>
     <!-- The camera HAL does its own preview state management during snaps -->
-    <bool name="previewStopsDuringSnapshot">false</bool>
+    <bool name="previewStopsDuringSnapshot">true</bool>
     <!-- Allows setting video size before recording starts -->
     <bool name="needsEarlyVideoSize">false</bool>
     <!-- Samsung Camcorder Mode -->
