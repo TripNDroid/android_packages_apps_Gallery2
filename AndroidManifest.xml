@@ -65,16 +65,29 @@
                 <data android:scheme="https" />
                 <data android:scheme="content" />
                 <data android:scheme="file" />
+                <data android:mimeType="video/avc" />
+                <data android:mimeType="video/mpeg" />
                 <data android:mimeType="video/mpeg4" />
                 <data android:mimeType="video/mp4" />
+                <data android:mimeType="video/mp4v-es" />
+                <data android:mimeType="video/ffmpeg" />
                 <data android:mimeType="video/3gp" />
                 <data android:mimeType="video/3gpp" />
                 <data android:mimeType="video/3gpp2" />
+                <data android:mimeType="video/x-flv" />
+                <data android:mimeType="video/x-matroska" />
+                <data android:mimeType="video/mpegts" />
+                <data android:mimeType="video/mp2p" />
+                <data android:mimeType="video/mpeg2" />
+                <data android:mimeType="video/x-vnd.on2.vp8" />
                 <data android:mimeType="video/webm" />
                 <data android:mimeType="video/avi" />
                 <data android:mimeType="application/sdp" />
                 <data android:mimeType="video/x-msvideo"/>
                 <data android:mimeType="video/divx" />
+                <data android:mimeType="video/quicktime" />
+                <data android:mimeType="video/x-ms-asf" />
+                <data android:mimeType="video/x-ms-wmv" />
              </intent-filter>
              <intent-filter>
                 <!-- HTTP live support -->
