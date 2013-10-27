@@ -2018,6 +2018,7 @@ public class PhotoModule
             // Switch on ZSL mode
           if (Util.useHTCCamMode()) {
             mParameters.set("zsl", "on");
+            mParameters.set("skinToneEnhancement", "enable");
           } else {
             mParameters.set("camera-mode", "1");
           }
