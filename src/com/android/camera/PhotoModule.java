@@ -2035,6 +2035,10 @@ public class PhotoModule
             mParameters.setISOValue(isoMode);
         }
 
+        String antiBanding = mPreferences.getString(CameraSettings.KEY_ANTIBANDING,
+                mActivity.getString(R.string.pref_camera_antibanding_default));
+        mParameters.setAntibanding(antiBanding);
+
         // Color effect
         String colorEffect = mPreferences.getString(CameraSettings.KEY_COLOR_EFFECT,
                 mActivity.getString(R.string.pref_camera_coloreffect_default));

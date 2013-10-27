@@ -172,4 +172,19 @@
         <item>10000</item>
         <item>5000</item>
     </string-array>
+
+    <!-- Camera Preferences Antibanding dialog box entries -->
+    <string-array name="pref_camera_antibanding_entries" translatable="false">
+        <item>@string/pref_camera_antibanding_entry_auto</item>
+        <item>@string/pref_camera_antibanding_entry_60</item>
+        <item>@string/pref_camera_antibanding_entry_50</item>
+        <item>@string/pref_camera_antibanding_entry_off</item>
+    </string-array>
+
+    <string-array name="pref_camera_antibanding_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>60hz</item>
+        <item>50hz</item>
+        <item>off</item>
+    </string-array>
 </resources>
