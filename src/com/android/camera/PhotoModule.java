@@ -2019,6 +2019,7 @@ public class PhotoModule
           if (Util.useHTCCamMode()) {
             mParameters.set("zsl", "on");
             mParameters.set("skinToneEnhancement", "enable");
+            mParameters.set("preview-format", "yuv420sp-adreno");
           } else {
             mParameters.set("camera-mode", "1");
           }
