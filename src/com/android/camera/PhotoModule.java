@@ -1864,6 +1864,8 @@ public class PhotoModule
         if (mSnapshotOnIdle && mBurstShotsDone > 0) {
             mHandler.post(mDoSnapRunnable);
         }
+
+        mActivity.setTrueView(mPreferences);
     }
 
     @Override
@@ -2212,6 +2214,7 @@ public class PhotoModule
                 mPreferences);
             initSmartCapture();
             mActivity.initPowerShutter(mPreferences);
+            mActivity.setTrueView(mPreferences);
         } else {
             mHandler.sendEmptyMessage(SET_PHOTO_UI_PARAMS);
         }
