@@ -2016,8 +2016,11 @@ public class PhotoModule
                 mCameraDevice.sendMagicSamsungZSLCommand();
             }
             // Switch on ZSL mode
+          if (Util.useHTCCamMode()) {
             mParameters.set("zsl", "on");
+          } else {
             mParameters.set("camera-mode", "1");
+          }
         }
 
         // Set JPEG quality.
