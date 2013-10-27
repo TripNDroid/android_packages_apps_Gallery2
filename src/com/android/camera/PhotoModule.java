@@ -862,7 +862,7 @@ public class PhotoModule
             boolean isSamsungHDR =
                     (mSceneMode == Util.SCENE_MODE_HDR && Util.needSamsungHDRFormat());
 
-            if (!mIsImageCaptureIntent && (!Util.isZSLEnabled() || isSamsungHDR)) {
+            if (!mIsImageCaptureIntent && (Util.useHTCCamMode() || !Util.isZSLEnabled() || isSamsungHDR)) {
                 if (ApiHelper.CAN_START_PREVIEW_IN_JPEG_CALLBACK) {
                     setupPreview();
                 } else {
@@ -871,7 +871,7 @@ public class PhotoModule
                     // time before starting the preview.
                     mHandler.sendEmptyMessageDelayed(SETUP_PREVIEW, 300);
                 }
-            } else if (mIsImageCaptureIntent && Util.isZSLEnabled()) {
+            } else if (mIsImageCaptureIntent && Util.isZSLEnabled() || !Util.useHTCCamMode()) {
                 // In ZSL mode, the preview is not stopped, due to which the
                 // review mode (ImageCapture) doesn't show the captured frame.
                 // Hence stop the preview if ZSL mode is active so that the
