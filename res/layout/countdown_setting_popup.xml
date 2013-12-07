@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<com.android.camera.ui.CountdownTimerPopup xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tripndroid.camera.ui.CountdownTimerPopup xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/SettingPopupWindow">
 
     <LinearLayout android:orientation="vertical"
@@ -98,4 +98,4 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
     </LinearLayout>
-</com.android.camera.ui.CountdownTimerPopup>
+</com.tripndroid.camera.ui.CountdownTimerPopup>

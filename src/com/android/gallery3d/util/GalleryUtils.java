@@ -56,7 +56,7 @@ public class GalleryUtils {
     private static final String TAG = "GalleryUtils";
     private static final String MAPS_PACKAGE_NAME = "com.google.android.apps.maps";
     private static final String MAPS_CLASS_NAME = "com.google.android.maps.MapsActivity";
-    private static final String CAMERA_LAUNCHER_NAME = "com.android.camera.CameraLauncher";
+    private static final String CAMERA_LAUNCHER_NAME = "com.tripndroid.camera.CameraLauncher";
 
     public static final String MIME_TYPE_IMAGE = "image/*";
     public static final String MIME_TYPE_VIDEO = "video/*";

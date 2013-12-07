@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.camera.ui.CountDownView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.tripndroid.camera.ui.CountDownView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/count_down_to_capture"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,4 +32,4 @@
         android:textSize="20sp"
         android:textColor="@android:color/white"
         android:text="@string/count_down_title_text" />
-</com.android.camera.ui.CountDownView>
+</com.tripndroid.camera.ui.CountDownView>

@@ -59,7 +59,7 @@ import java.io.OutputStream;
  */
 public class CropActivity extends Activity {
     private static final String LOGTAG = "CropActivity";
-    public static final String CROP_ACTION = "com.android.camera.action.CROP";
+    public static final String CROP_ACTION = "com.tripndroid.camera.action.CROP";
     private CropExtras mCropExtras = null;
     private LoadBitmapTask mLoadBitmapTask = null;
 

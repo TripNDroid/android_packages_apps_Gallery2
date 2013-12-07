@@ -142,7 +142,7 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                <action android:name="com.android.camera.action.REVIEW" />
+                <action android:name="com.tripndroid.camera.action.REVIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="" />
@@ -160,7 +160,7 @@
                 <data android:mimeType="application/vnd.google.panorama360+jpg" />
             </intent-filter>
             <intent-filter>
-                <action android:name="com.android.camera.action.REVIEW" />
+                <action android:name="com.tripndroid.camera.action.REVIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="http" />
@@ -198,16 +198,16 @@
         </activity-alias>
 
         <!-- This activity acts as a trampoline to the new Camera activity
-             in com.android.camera2 package, so that existing shortcuts
+             in com.tripndroid.camera package, so that existing shortcuts
              are preserved. -->
-        <activity android:name="com.android.camera.CameraActivity"
+        <activity android:name="com.tripndroid.camera.CameraActivity"
             android:icon="@mipmap/ic_launcher_camera"
             android:label="@string/camera_label"
-            android:taskAffinity="com.android.camera.CameraActivity"
+            android:taskAffinity="com.tripndroid.camera.CameraActivity"
             android:theme="@style/android:Theme.NoDisplay" />
-        <activity-alias android:name="com.android.camera.CameraLauncher"
+        <activity-alias android:name="com.tripndroid.camera.CameraLauncher"
             android:label="@string/camera_label"
-            android:targetActivity="com.android.camera.CameraActivity">
+            android:targetActivity="com.tripndroid.camera.CameraActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -246,7 +246,7 @@
         <activity android:name="com.android.gallery3d.app.TrimVideo"
                 android:label="@string/trim_label">
             <intent-filter android:label="@string/crop_label">
-                <action android:name="com.android.camera.action.TRIM" />
+                <action android:name="com.tripndroid.camera.action.TRIM" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="content" />
                 <data android:scheme="file" />
@@ -294,7 +294,7 @@
             android:theme="@style/Theme.Crop"
             android:configChanges="keyboardHidden|orientation|screenSize">
            <intent-filter android:label="@string/crop_label">
-                <action android:name="com.android.camera.action.CROP" />
+                <action android:name="com.tripndroid.camera.action.CROP" />
                 <data android:scheme="http" />
                 <data android:scheme="https" />
                 <data android:scheme="content" />
@@ -364,12 +364,12 @@
         </activity>
         <service android:name="com.android.gallery3d.app.BatchService" />
 
-        <receiver android:name="com.android.camera.DisableCameraReceiver">
+        <receiver android:name="com.tripndroid.camera.DisableCameraReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.camera.MediaSaveService" />
+        <service android:name="com.tripndroid.camera.MediaSaveService" />
     </application>
 </manifest>

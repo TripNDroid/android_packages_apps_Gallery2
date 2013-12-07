@@ -137,7 +137,7 @@ public class FilterShowActivity extends FragmentActivity implements OnItemClickL
 
     private static final long LIMIT_SUPPORTS_HIGHRES = 134217728; // 128Mb
 
-    public static final String TINY_PLANET_ACTION = "com.android.camera.action.TINY_PLANET";
+    public static final String TINY_PLANET_ACTION = "com.tripndroid.camera.action.TINY_PLANET";
     public static final String LAUNCH_FULLSCREEN = "launch-fullscreen";
     public static final boolean RESET_TO_LOADED = false;
     private ImageShow mImageShow = null;
