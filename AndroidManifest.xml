@@ -398,5 +398,6 @@
         <activity android:name="com.android.gallery3d.app.dualcam3d.ThreeDimensionalActivity"
             android:configChanges="orientation|screenSize|layoutDirection">
         </activity>
+        <activity android:name="com.aurelhubert.ahbottomnavigation" />
     </application>
 </manifest>
