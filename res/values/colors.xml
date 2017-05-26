@@ -86,4 +86,14 @@
     <color name="timeline_title_text_color">#8A000000</color>
     <color name="timeline_title_number_text_color">#42000000</color>
     <color name="timeline_title_background_color">#fafafa</color>
+
+    <!-- ahbottomnavigation -->
+    <color name="colorBottomNavigationPrimary">#3F51B5</color>
+    <color name="colorBottomNavigationPrimaryDark">#303F9F</color>
+    <color name="colorBottomNavigationAccent">#FF4081</color>
+    <color name="colorBottomNavigationInactive">#747474</color>
+    <color name="colorBottomNavigationActiveColored">#FFFFFF</color>
+    <color name="colorBottomNavigationInactiveColored">#50FFFFFF</color>
+    <color name="colorBottomNavigationSelectedBackground">#17000000</color>
+    <color name="colorBottomNavigationNotification">#F63D2B</color>
 </resources>

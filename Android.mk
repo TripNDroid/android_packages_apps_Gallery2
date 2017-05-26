@@ -6,7 +6,10 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_JAVA_LIBRARIES := telephony-common
 
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v13
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4
+LOCAL_STATIC_JAVA_LIBRARIES += android-support-v7-appcompat
+LOCAL_STATIC_JAVA_LIBRARIES += android-support-v13
+LOCAL_STATIC_JAVA_LIBRARIES += android-support-design
 LOCAL_STATIC_JAVA_LIBRARIES += org.codeaurora.gallery.common
 LOCAL_STATIC_JAVA_LIBRARIES += xmp_toolkit
 LOCAL_STATIC_JAVA_LIBRARIES += mp4parser
@@ -29,9 +32,16 @@ LOCAL_SRC_FILES += $(call all-java-files-under, src_pd)
 
 # $(warning Anand Commend LOCAL_RENDERSCRIPT_SKIP_INSTALL is $(LOCAL_RENDERSCRIPT_SKIP_INSTALL))
 
-LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res
+LOCAL_RESOURCE_DIR += \
+    $(LOCAL_PATH)/res \
+    $(TOP)/frameworks/support/v7/appcompat/res \
+    $(TOP)/frameworks/support/design/res
 
-LOCAL_AAPT_FLAGS := --auto-add-overlay
+LOCAL_AAPT_FLAGS := \
+    --auto-add-overlay \
+    --extra-packages com.aurelhubert.ahbottomnavigation \
+    --extra-packages android.support.v7.appcompat \
+    --extra-packages android.support.design
 
 LOCAL_PACKAGE_NAME := Gallery2
 

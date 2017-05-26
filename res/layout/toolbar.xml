@@ -36,7 +36,6 @@
     android:elevation="4dp"
     android:theme="@style/ToolbarTheme"
     android:titleTextAppearance="@style/ToolbarTitleStyle"
-    android:popupTheme="@style/ToolbarPopUpTheme"
-    android:navigationIcon="@drawable/drawer" >
+    android:popupTheme="@style/ToolbarPopUpTheme" >
 
 </Toolbar>

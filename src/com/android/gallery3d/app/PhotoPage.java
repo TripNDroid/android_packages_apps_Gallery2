@@ -1033,10 +1033,7 @@ public abstract class PhotoPage extends ActivityState implements
                 mActionBar.setBackGroundDefault();
                 int count = mActivity.getStateManager().getStateCount();
                 if (mIsFromVideoScreen || count == 1 || mIsFromTimelineScreen) {
-                    mActivity.getToolbar().setNavigationContentDescription(
-                            "drawer");
-                    mActivity.getToolbar().setNavigationIcon(R.drawable.drawer);
-                    ((GalleryActivity)mActivity).toggleNavDrawer(true);
+                    ((GalleryActivity)mActivity).toggleNavBar(true);
                     if (mModel instanceof PhotoDataAdapter) {
                         ((PhotoDataAdapter) mModel).setDataListener(null);
                     }
