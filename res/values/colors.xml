@@ -15,58 +15,72 @@
 -->
 <resources>
 
-    <color name="default_background">#fafafa</color>
+    <!-- background -->
+    <color name="default_background">#000</color>
+    <color name="default_background_2">#404040</color>
+    <color name="default_action_bar_bg">@*android:color/material_deep_teal_500</color>
+
+    <!-- td colors -->
+    <color name="td_tint">@*android:color/material_deep_teal_700</color>
+    <color name="td_white">#FFFFFF</color>
 
     <!-- configuration for album set page -->
-    <color name="albumset_background">#fafafa</color>
-    <color name="albumset_placeholder">#75000000</color>
+    <color name="albumset_background">@color/default_background_2</color>
+    <color name="albumset_placeholder">#47494F</color>
     <color name="albumset_label_background">#8A000000</color> <!-- 54% alpha -->
-    <color name="albumset_label_title">#FFFFFF</color>
-    <color name="albumset_label_count">#FFFFFF</color>
+    <color name="albumset_label_title">@color/td_white</color>
+    <color name="albumset_label_count">@color/td_white</color>
     <color name="albumlist_label_title">#8E000000</color>
 
     <!-- configuration for album page -->
-    <color name="album_background">#fafafa</color>
-    <color name="album_placeholder">#75000000</color>
+    <color name="album_background">@color/default_background_2</color>
+    <color name="album_placeholder">#47494F</color>
 
     <!-- configuration for photo page -->
-    <color name="photo_background">#1A1A1A</color>
-    <color name="photo_placeholder">#333</color>
+    <color name="photo_background">@color/default_background_2</color>
+    <color name="photo_placeholder">#47494F</color>
     <color name="photo_page_action_bar">#8A000000</color>
     <color name="photo_page_bottom_panel">#8A000000</color>
 
     <!-- configuration for manage cache page -->
-    <color name="cache_background">#1A1A1A</color>
-    <color name="cache_placeholder">#333</color>
+    <color name="cache_background">@color/default_background_2</color>
+    <color name="cache_placeholder">#47494F</color>
 
-    <color name="bitmap_screennail_placeholder">#333</color>
+    <color name="bitmap_screennail_placeholder">#47494F</color>
 
-    <color name="slideshow_background">#1A1A1A</color>
+    <color name="slideshow_background">@color/default_background_2</color>
 
     <color name="button_dark_transparent_background">#6000</color>
 
     <color name="ingest_highlight_semitransparent">#8833b5e5</color>
     <color name="ingest_date_tile_text">#33b5e5</color>
 
+    <color name="tab_1">#313131</color>
+    <color name="tab_2">#313131</color>
+    <color name="tab_3">#313131</color>
+    <color name="tab_icon_1">@color/td_white</color>
+    <color name="tab_icon_2">@color/td_white</color>
+    <color name="tab_icon_3">@color/td_white</color>
+
     <!-- Camera resources below -->
 
-    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_elapsed_text">@color/td_white</color>
     <color name="recording_time_remaining_text">#FFFF0033</color>
-    <color name="on_viewfinder_label_background_color">#77333333</color>
-    <color name="review_control_pressed_color">#FF33B5E5</color>
-    <color name="review_control_pressed_fan_color">#3F33B5E5</color>
+    <color name="on_viewfinder_label_background_color">@color/default_background_2</color>
+    <color name="review_control_pressed_color">@color/td_tint</color>
+    <color name="review_control_pressed_fan_color">#3F0071AA</color>
     <color name="review_background">#FF000000</color>
     <color name="icon_disabled_color">#DD777777</color>
     <color name="time_lapse_arc">#FFC5C5C5</color>
     <color name="indicator_background">#40000000</color>
-    <color name="popup_title_color">#ff33b5e5</color>
-    <color name="popup_background">#ff282828</color>
+    <color name="popup_title_color">@color/td_tint</color>
+    <color name="popup_background">@color/default_background_2</color>
     <color name="pano_progress_empty">#FF2E2E2E</color>
     <color name="pano_progress_done">#FF33525E</color>
     <color name="pano_progress_indication">#FF0099CC</color>
     <color name="pano_progress_indication_fast">#FFFF2222</color>
-    <color name="mode_selection_border">#33B5E5</color>
-    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="mode_selection_border">@color/td_tint</color>
+    <color name="holo_blue_light">@color/td_tint</color>
     <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
     <color name="bright_foreground_holo_dark">#fff3f3f3</color>
     <color name="face_detect_start">#80ffffff</color>
@@ -78,22 +92,22 @@
     <color name="lowlight">#650101</color>
     <color name="grey">#e7e7e7</color>
     <color name="disabled_knob">#575757</color>
-    <color name="toolbar_theme">#e53935</color>
-    <color name="multiselect_background">#ffffff</color>
+    <color name="toolbar_theme">@color/td_tint</color>
+    <color name="multiselect_background">@color/td_white</color>
     <color name="edit_background">#212121</color>
     <color name="edit_actionbar_background">#8A000000</color>
     <color name="dialog_button_color">#009688</color>
-    <color name="timeline_title_text_color">#8A000000</color>
-    <color name="timeline_title_number_text_color">#42000000</color>
-    <color name="timeline_title_background_color">#fafafa</color>
+    <color name="timeline_title_text_color">@color/td_white</color>
+    <color name="timeline_title_number_text_color">@color/td_white</color>
+    <color name="timeline_title_background_color">#444444</color>
 
     <!-- ahbottomnavigation -->
-    <color name="colorBottomNavigationPrimary">#3F51B5</color>
-    <color name="colorBottomNavigationPrimaryDark">#303F9F</color>
+    <color name="colorBottomNavigationPrimary">@*android:color/material_deep_teal_200</color>
+    <color name="colorBottomNavigationPrimaryDark">@*android:color/material_deep_teal_300</color>
     <color name="colorBottomNavigationAccent">#FF4081</color>
     <color name="colorBottomNavigationInactive">#747474</color>
     <color name="colorBottomNavigationActiveColored">#FFFFFF</color>
     <color name="colorBottomNavigationInactiveColored">#50FFFFFF</color>
-    <color name="colorBottomNavigationSelectedBackground">#17000000</color>
+    <color name="colorBottomNavigationSelectedBackground">#17313131</color>
     <color name="colorBottomNavigationNotification">#F63D2B</color>
 </resources>
