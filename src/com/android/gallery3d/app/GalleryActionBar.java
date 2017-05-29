@@ -453,12 +453,13 @@ public class GalleryActionBar {
 
     public void setBackGroundTransparent() {
         mActionBar.setBackgroundDrawable(
-                new ColorDrawable(mContext.getResources().getColor(R.color.photo_page_action_bar)));
+                new ColorDrawable(mContext.getResources().getColor(R.color.default_action_bar_bg)));
     }
 
     public void setBackGroundDefault()
     {
-        mActionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#0084c6")));
+        mActionBar.setBackgroundDrawable(
+                new ColorDrawable(mContext.getResources().getColor(R.color.default_action_bar_bg)));
     }
 
 
