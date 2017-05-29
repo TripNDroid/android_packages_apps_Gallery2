@@ -1177,7 +1177,7 @@ CHAR LIMIT = NONE] -->
     <!-- Timeline screen title -->
     <string name="timeline_title">Timeline</string>
     <!-- Albums screen title -->
-    <string name="albums_title" translatable="false">@string/tab_albums</string>
+    <string name="albums_title">Albums</string>
     <!-- Videos screen title -->
     <string name="videos_title">Videos</string>
     <string name="action_viewtype_list">List view</string>
